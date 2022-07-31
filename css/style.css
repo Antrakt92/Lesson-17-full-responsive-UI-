@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+body {
+   font-family: 'Roboto', sans-serif;
+}
 .block1 {
-   background: url(../img/page1/duotone.jpg);
+   background: url(../img/page1/duotone.jpg) no-repeat;
+   background-size: cover;
    padding: 26px 0 0 0;
+   min-height: 800px;
+   background-color: transparent;
+   background-position: center;
 }
 .block1__content {
    margin: 0 auto;
@@ -82,7 +90,6 @@
    letter-spacing: 0.15px;
    text-transform: uppercase;
    border-radius: 2px;
-   
 }
 .block1__button a {
    padding: 10px 20px;
@@ -90,8 +97,6 @@
    border-radius: 8px;
    color: #FFFFFF;
 }
-
-
 .nav-menu {
    display: flex;
    justify-content: space-between;
@@ -99,6 +104,9 @@
    background: #FFFFFF;
    border-radius: 10px;
    min-height: 60px;
+}
+.nav-menu:not(:last-child) {
+   margin: 0 0 126px 0;
 }
 .nav-menu__items {
    display: flex;
@@ -113,7 +121,7 @@
    color: #000000;
 }
 .nav-menu__item {
-   flex: 0 1 70px;
+   flex: 0 60px;
    text-align: center;
    height: 20px;
 }
@@ -132,6 +140,20 @@
    height: 24px;
    width: 24px;
 }
+.block1__header {
+   font-weight: 900;
+   font-size: 56px;
+   line-height: 1;
+   color: #FFFFFF;
+   max-width: 583px;
+}
+.block1__header:not(:last-child) {
+   margin: 0 0 48px 0;
+}
+
+
+
+
 @media (max-width: 807.5px){
    .block1__items {
       /*justify-content: center;*/
@@ -148,6 +170,13 @@
    .nav-menu__item {
       text-align:start;
    }
+   .nav-menu:not(:last-child) {
+      margin: 0 0 50px 0;
+   }
+   .block1__header {
+      /*text-align: center;*/
+      font-size: 40px;
+   }
 }
 @media (max-width: 633px) {
    .block1__items {
@@ -158,21 +187,37 @@
 @media (max-width: 414px) {
    .block1__items {
       /*justify-content: center;*/
-      max-width: 186px;
+      max-width: 189px;
    }
    .block1 {
       display: flex;
    }
    .block1__content {
       justify-content: center;
+      flex: 1 1 200px;
    }   
    .nav-menu {
-      max-width: 186px;
-   }
-   .nav-menu {
+      /*max-width: 200px;*/
       padding: 10px 20px;
+   }
+   .nav-menu__items {
+      column-gap: 10px;
    }
    .nav-menu__icons {
       column-gap: 10px;
+   }   
+   .nav-menu:not(:last-child) {
+      margin: 0 0 26px 0;
+   }
+   .block1__header {
+      /*max-width: 189px;*/
+      text-align: center;
+      font-size: 30px;
+   }
+   .block1__header:not(:last-child) {
+      margin: 0 0 28px 0;
+   }
+   .block1__button {
+      justify-content: center;
    }
 }
