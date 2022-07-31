@@ -150,7 +150,84 @@ body {
 .block1__header:not(:last-child) {
    margin: 0 0 48px 0;
 }
+/*---------------------------------------------------------------------*/
+.block2 {
+   background: #F5F5F5;
+   /*display: flex;*/
+}
+p {
+   margin: 0 auto;
+   width: 200px;
+}
+/*.block2::after {
+   content: "";
+   display: block;
+   background: url(../img/page2/Stylize\ Circles.svg) no-repeat;
+   height: 100px;
+   width: 100px;
+   transform: translate(0px, 0px);
+}*/
+.block2__container {
+   color: #F5F5F5;
+   background: #5D62B5 url(../img/page2/Blob\ 2.png) 0 255px no-repeat;
+   border-radius: 40px;
+   max-width: 1020px;
+   min-height: 700px;
+   margin: 0px auto;
+   padding: 100px 87px 0 87px;
+   transform: translate(0px, -80px);
+}
 
+.block2__logo {
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 2;
+   letter-spacing: 2.5px;
+   text-transform: uppercase;
+   background: url(../img/page2/Overline\ Mark.svg) 0 -2px no-repeat;
+   padding-left: 33px;
+}
+.block2__logo:not(:last-child) {
+   margin-bottom: 33px;
+}
+.block2__header {
+   font-weight: 900;
+   font-size: 36px;
+   line-height: 42px;
+}
+.block2__header:not(:last-child) {
+   margin-bottom: 36px;
+}
+.block2__text {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.15px;
+}
+.block2__image {
+   position: relative;
+   top: 0px;
+   filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+   max-width: 846px;
+   margin: 0 auto;
+   transform: translate(0px, 60px);
+}
+.block2__image img {
+   border-radius: 40px;
+   max-width: 100%;
+}
+/*.test {
+   height: 0px;
+   width: 1620px;
+   display: flex;
+   justify-content: end;
+}*/
+.block2__circles {
+   margin: 0 auto;
+   height: 0px;
+   width: 0px;
+   transform: translate(380px, -209px);
+}
 
 
 
@@ -174,19 +251,26 @@ body {
       margin: 0 0 50px 0;
    }
    .block1__header {
-      /*text-align: center;*/
       font-size: 40px;
+   }
+}
+@media (max-width: 769px) {
+   .block2__container {
+      padding: 70px 50px 0 50px;
    }
 }
 @media (max-width: 633px) {
    .block1__items {
-      /*justify-content: center;*/
       max-width: 394px;
+   }
+}
+@media (max-width: 426px) {
+   .block2__container {
+      padding: 50px 30px 0 30px;
    }
 }
 @media (max-width: 414px) {
    .block1__items {
-      /*justify-content: center;*/
       max-width: 189px;
    }
    .block1 {
@@ -210,7 +294,6 @@ body {
       margin: 0 0 26px 0;
    }
    .block1__header {
-      /*max-width: 189px;*/
       text-align: center;
       font-size: 30px;
    }
