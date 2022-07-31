@@ -103,21 +103,24 @@
 .nav-menu__items {
    display: flex;
    flex-wrap: wrap;
+   flex: 1 1 70px;
+   align-items: center;
+   column-gap: 37px;
    font-weight: 700;
    font-size: 14px;
    line-height: 1.57;
    letter-spacing: 0.15px;
    color: #000000;
-   column-gap: 37px;
 }
 .nav-menu__item {
-   /*padding: 0 4px;*/
-   flex: 1 1 70px;
+   flex: 0 1 70px;
+   text-align: center;
+   height: 20px;
 }
 .nav-menu__icons {
    display: flex;
    column-gap: 22px;
-   
+   align-items: center;
 }
 .nav-menu__search {
    background: url(../img/page1/search_24px.svg) no-repeat;
@@ -141,6 +144,9 @@
    }
    .block1__button {
       margin: 0 0 27px 0;
+   }
+   .nav-menu__item {
+      text-align:start;
    }
 }
 @media (max-width: 633px) {
